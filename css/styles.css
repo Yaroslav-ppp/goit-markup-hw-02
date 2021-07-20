@@ -5,7 +5,7 @@
   --accent-color: #2196f3;
   --secondary-text: #212121;
   --main-text: #757575;
-  --links-footer: rgba(255, 255, 255, 0, 6);
+  --links-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -56,16 +56,12 @@ button {
 .site-nav-portfolio,
 .site-nav-contacts {
   color: var(--secondary-text);
+  text-decoration: none;
 }
 
 .site-nav :hover,
 .site-nav :focus {
   color: var(--accent-color);
-}
-.site-nav-studio,
-.site-nav-portfolio,
-.site-nav-contacts {
-  text-decoration: none;
 }
 .nav-link-current {
   color: var(--accent-color);
@@ -84,6 +80,14 @@ button {
 /* section-hero */
 .section-hero {
   background-color: var(--dark-background);
+  color: var(--white-color);
+}
+.title {
+  text-transform: uppercase;  
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   color: var(--white-color);
 }
 
@@ -113,6 +117,7 @@ button {
 
 /* our advantages */
 .section-title {
+  text-transform: uppercase; 
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -134,32 +139,38 @@ button {
 }
 
 /* our stuff */
-.staff {
+.title-name {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.title-name {
-  font-weight: 500;
   color: var(--secondary-text);
 }
 .title-proffesion {
-   color: var(--main-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text);
 }
 
 /* footer */
 .footer {
   background-color: var(--dark-background);
+  }
+.office-address {
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.office-address {
-  color: var(--white-color);
   font-style: normal;
 }
 .contact-link-footer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--links-footer);
   text-decoration: none;
   font-style: normal;
@@ -171,7 +182,6 @@ button {
 
 /* portfolio navigation */
 .portfolio-nav-btn {
-  height: 38px;
   border-radius: 4px;
   background: #f5f4fa;
     /* text */
